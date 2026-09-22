@@ -23,7 +23,6 @@ export default function Hero() {
           SKYFLIX MEDIA · ABUJA, NIGERIA
         </div>
         <h1
-          data-reveal
           className="m-0 max-w-[15ch] text-[clamp(42px,8.4vw,112px)] font-extrabold leading-[0.92] tracking-[-0.03em]"
         >
           PERFECTION IN PROFESSION

@@ -10,6 +10,7 @@ import Facilitators from "@/components/academy/Facilitators";
 import Partners from "@/components/academy/Partners";
 import AcademyFaq from "@/components/academy/AcademyFaq";
 import Apply from "@/components/academy/Apply";
+import ApplyDialog from "@/components/academy/ApplyDialog";
 
 export const metadata: Metadata = {
   title: "Skyflix Media Creative Academy — Applications open",
@@ -33,6 +34,7 @@ export default function AcademyPage() {
         <Apply />
       </main>
       <AcademyFooter />
+      <ApplyDialog />
     </>
   );
 }

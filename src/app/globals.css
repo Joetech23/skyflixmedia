@@ -208,6 +208,30 @@
     transform: none;
   }
 
+  /* Apply popup: slides up on phones, fades and lifts on larger screens. */
+  @media (prefers-reduced-motion: no-preference) {
+    .apply-dialog[open] {
+      animation: dialog-in 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .apply-dialog[open]::backdrop {
+      animation: backdrop-in 0.3s ease-out;
+    }
+  }
+
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  }
+
+  @keyframes backdrop-in {
+    from {
+      opacity: 0;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal-ready [data-reveal] {
       opacity: 1;

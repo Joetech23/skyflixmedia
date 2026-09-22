@@ -20,7 +20,6 @@ export default function AcademyHero() {
           FIRST EDITION · APPLICATIONS OPEN
         </div>
         <h1
-          data-reveal
           className="m-0 max-w-[18ch] text-[clamp(38px,7.4vw,98px)] font-extrabold leading-[0.93] tracking-[-0.03em]"
         >
           SKYFLIX MEDIA CREATIVE ACADEMY

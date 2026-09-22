@@ -51,7 +51,7 @@ export default function Programme() {
           className="autofit border border-ink-edge bg-ink-panel"
           style={col("300px")}
         >
-          <div className="flex flex-col gap-[18px] border-r border-ink-edge p-[clamp(26px,3.4vw,44px)]">
+          <div className="flex flex-col gap-[18px] border-b border-ink-edge p-[clamp(26px,3.4vw,44px)] min-[760px]:border-b-0 min-[760px]:border-r">
             <span className="self-start bg-red-brand px-3 py-[7px] font-mono text-[11px] tracking-[0.16em] text-white">
               EDITION 01 · FLAGSHIP
             </span>
