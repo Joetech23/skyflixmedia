@@ -1,29 +1,36 @@
 import { col } from "@/lib/style";
 
 const criteria = [
-  "Aspiring photographers, videographers, editors and livestream operators.",
-  "No formal media qualification required — commitment matters more.",
-  "Able to attend in person in Abuja for the full programme.",
-  "Own camera helpful but not required; Academy gear is available for training.",
-  "Applicants of all backgrounds; we actively encourage women to apply.",
+  "An aspiring photographer, videographer, visual storyteller or content creator.",
+  "A student, recent graduate, unemployed or under-employed young person.",
+  "Interested in developing practical creative and digital skills.",
+  "A beginner, or someone with some existing experience.",
+  "Able to attend the full 3-day programme in person in Maiduguri.",
+  "Willing to learn, participate actively and complete practical assignments.",
+];
+
+const notes = [
+  "You do not need a formal qualification in photography or media.",
+  "Owning a camera is helpful but not required; available Academy equipment may be used during training.",
+  "Applicants from all backgrounds are welcome, and young women are especially encouraged to apply.",
 ];
 
 const steps = [
   {
-    title: "Submit the form",
-    copy: "Tell us your track, your experience and why you want in.",
+    title: "Apply online",
+    copy: "Complete the six-step application form. It takes about 10–15 minutes.",
   },
   {
-    title: "Short conversation",
-    copy: "A call or studio visit with the Academy coordinator.",
+    title: "Review",
+    copy: "Applications are reviewed on eligibility, motivation, availability and suitability.",
   },
   {
-    title: "Offer and payment",
-    copy: "Confirm your seat, settle the fee or scholarship terms.",
+    title: "Selection",
+    copy: "Shortlisted and selected applicants are contacted by email and phone.",
   },
   {
-    title: "Start the programme",
-    copy: "Induction, gear briefing, then straight into practical work.",
+    title: "Attend the bootcamp",
+    copy: "Three days of practical training, 13–15 October 2026 in Maiduguri.",
   },
 ];
 
@@ -39,11 +46,21 @@ export default function Eligibility() {
             <span className="eyebrow-text">ELIGIBILITY</span>
           </div>
           <h2 className="m-0 text-[clamp(28px,4vw,50px)] font-extrabold leading-[1.02] tracking-[-0.02em]">
-            Who we are looking for
+            Who can apply?
           </h2>
+          <p className="m-0 font-body text-[clamp(16px,1.8vw,20px)] leading-[1.6] text-[#d2d2d2]">
+            Young people aged 16–30 who are interested in developing practical
+            skills in photography, visual storytelling and creative media. You
+            may apply if you are:
+          </p>
           <ul className="m-0 list-disc pl-5 font-body text-[clamp(16px,1.8vw,20px)] leading-[1.75] text-[#d2d2d2]">
             {criteria.map((item) => (
               <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <ul className="m-0 flex list-none flex-col gap-2 border-l-[3px] border-red-brand p-0 pl-4 font-body text-[16px] leading-[1.6] text-mute-400">
+            {notes.map((note) => (
+              <li key={note}>{note}</li>
             ))}
           </ul>
         </div>

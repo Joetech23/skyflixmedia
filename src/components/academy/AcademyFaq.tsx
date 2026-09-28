@@ -1,8 +1,13 @@
 const items = [
   {
+    question: "Who can apply?",
+    answer:
+      "Young people aged 16–30 who can attend all three days in person in Maiduguri. Applicants under 18 need a parent or guardian's consent if selected — we collect their details on the form and send the consent form after selection.",
+  },
+  {
     question: "Do I need my own camera?",
     answer:
-      "No. Academy gear is available for training sessions. Bringing your own body and lens means more practice time between classes.",
+      "No. Owning a camera is helpful but not required; available Academy equipment may be used during training. Access to equipment is not a selection advantage.",
   },
   {
     question: "Is there a certificate?",
@@ -10,14 +15,14 @@ const items = [
       "Yes — a certificate of completion is issued at the end of the programme, alongside the portfolio work you produce.",
   },
   {
-    question: "Can I pay in instalments?",
+    question: "Does applying guarantee a place?",
     answer:
-      "Confirm your payment terms and we will state them here, including deposit and balance deadlines.",
+      "No. There are 30 places. Applications are reviewed based on eligibility, motivation, availability and suitability, and shortlisted/selected applicants are contacted by email and phone.",
   },
   {
-    question: "Do trainees work on real jobs?",
+    question: "What happens after the training?",
     answer:
-      "Selected trainees join a live Skyflix production as crew support, supervised, as part of the programme.",
+      "Selected participants may have access to post-training mentorship, portfolio development, professional exposure and potential internship/placement opportunities, subject to availability, performance, safeguarding requirements and host organisation policies.",
   },
   {
     question: "Can an organisation sponsor applicants?",

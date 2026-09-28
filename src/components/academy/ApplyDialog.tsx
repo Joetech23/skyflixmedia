@@ -84,13 +84,13 @@ export default function ApplyDialog() {
         <div className="flex items-start justify-between gap-6 border-b border-ink-edge px-[clamp(20px,3vw,40px)] py-5">
           <div className="flex flex-col gap-1">
             <span className="font-mono text-[11px] tracking-[0.16em] text-mute-500">
-              SKYFLIX MEDIA CREATIVE ACADEMY
+              SKYFLIX MEDIA CREATIVE ACADEMY · COHORT 1
             </span>
             <h2
               id="apply-dialog-title"
               className="m-0 text-[clamp(22px,2.6vw,30px)] font-extrabold leading-[1.05] tracking-[-0.01em]"
             >
-              Apply to the first edition
+              Photography &amp; Visual Storytelling Bootcamp
             </h2>
           </div>
           <button

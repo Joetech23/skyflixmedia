@@ -7,9 +7,10 @@ const lines = [
 ];
 
 const steps = [
-  "Your details and preferred track",
-  "Your experience so far",
-  "Why you want this training",
+  "About you and where you're based",
+  "Your education and creative background",
+  "Why you want to join, and a story you'd tell",
+  "Media consent and declaration",
 ];
 
 export default function Apply() {
@@ -21,11 +22,12 @@ export default function Apply() {
       >
         <div className="flex flex-col gap-[clamp(20px,3vw,32px)]">
           <h2 className="m-0 text-[clamp(34px,5.2vw,72px)] font-extrabold leading-[0.95] tracking-[-0.02em]">
-            APPLY TO THE FIRST EDITION
+            APPLY FOR COHORT 1
           </h2>
           <p className="lede max-w-[52ch] text-mute-300">
-            Fill the form and the Academy coordinator will come back to you with
-            next steps. Seats are limited.
+            Photography &amp; Visual Storytelling Bootcamp · 13–15 October 2026
+            · Maiduguri, Borno State. 30 places. Submitting an application does
+            not guarantee selection.
           </p>
           <div className="relative h-[clamp(200px,40vw,300px)] w-full">
             <Image
@@ -59,7 +61,7 @@ export default function Apply() {
         >
           <div className="kicker text-red-brand">APPLICATION FORM</div>
           <p className="m-0 text-[clamp(22px,2.6vw,30px)] font-extrabold leading-[1.1]">
-            Takes about five minutes.
+            Six short steps, about 10–15 minutes.
           </p>
           <ol className="m-0 flex list-none flex-col gap-px bg-ink-edge p-0">
             {steps.map((step, index) => (
@@ -81,7 +83,7 @@ export default function Apply() {
             Start your application
           </a>
           <p className="m-0 font-body text-[15px] text-mute-500">
-            Scholarship and sponsored seats can be requested on the form.
+            Your answers are saved on this device as you go, so you can finish later.
           </p>
         </div>
       </div>

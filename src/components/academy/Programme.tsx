@@ -1,29 +1,30 @@
+import { PROGRAMME } from "@/lib/academy/application";
 import { col } from "@/lib/style";
 
 const facts = [
-  { label: "DURATION", value: "To confirm" },
-  { label: "START DATE", value: "To confirm" },
-  { label: "FORMAT", value: "In-person, Abuja" },
-  { label: "COHORT SIZE", value: "Limited seats" },
-  { label: "FEE", value: "To confirm" },
-  { label: "CERTIFICATE", value: "On completion" },
+  { label: "DATES", value: PROGRAMME.dates },
+  { label: "DURATION", value: "3 days, in person" },
+  { label: "VENUE", value: PROGRAMME.location },
+  { label: "PLACES", value: `${PROGRAMME.places} participants` },
+  { label: "WHO CAN APPLY", value: `Ages ${PROGRAMME.minAge}–${PROGRAMME.maxAge}` },
+  { label: "EXPERIENCE", value: "Beginners welcome" },
 ];
 
-const extras = [
+const outcomes = [
   {
-    label: "WEEKEND TRACK",
-    title: "Short course",
-    copy: "A shorter weekend option for people already in work. Confirm if you plan to run it.",
+    label: "LEARN",
+    title: "Practical skills",
+    copy: "Hands-on sessions in photography, visual storytelling, digital communication and creative entrepreneurship.",
   },
   {
-    label: "MASTERCLASS",
-    title: "One-day intensive",
-    copy: "Single-topic sessions — lighting, colour, livestream set-up — for paying attendees.",
+    label: "CREATE",
+    title: "Meaningful work",
+    copy: "Complete practical assignments, create work that matters and start building your portfolio.",
   },
   {
-    label: "SCHOLARSHIP",
-    title: "Sponsored seats",
-    copy: "Partner-funded places for applicants who cannot pay fees. Open to sponsors.",
+    label: "CONNECT",
+    title: "After the training",
+    copy: "Selected participants may have access to post-training mentorship, portfolio development, professional exposure and potential internship/placement opportunities, subject to availability, performance, safeguarding requirements and host organisation policies.",
   },
 ];
 
@@ -34,15 +35,16 @@ export default function Programme() {
         <div className="autofit items-end gap-5" style={col("300px")}>
           <div className="flex flex-col gap-[14px]">
             <div className="eyebrow">
-              <span className="eyebrow-text">UPCOMING PROGRAMMES</span>
+              <span className="eyebrow-text">CALL FOR APPLICATIONS</span>
             </div>
             <h2 className="m-0 text-[clamp(32px,5vw,68px)] font-extrabold leading-[0.98] tracking-[-0.02em]">
-              FIRST EDITION
+              COHORT 1
             </h2>
           </div>
-          <p className="m-0 font-mono text-[13px] leading-[1.6] text-mute-500">
-            Programme title, dates, duration and fee were cut off in your brief
-            — send them and I will set them here.
+          <p className="lede text-mute-400">
+            Are you interested in photography, visual storytelling, videography,
+            digital communication or creative entrepreneurship? This is our
+            inaugural bootcamp.
           </p>
         </div>
 
@@ -53,22 +55,21 @@ export default function Programme() {
         >
           <div className="flex flex-col gap-[18px] border-b border-ink-edge p-[clamp(26px,3.4vw,44px)] min-[760px]:border-b-0 min-[760px]:border-r">
             <span className="self-start bg-red-brand px-3 py-[7px] font-mono text-[11px] tracking-[0.16em] text-white">
-              EDITION 01 · FLAGSHIP
+              COHORT 1 · APPLICATIONS OPEN
             </span>
             <h3 className="m-0 text-[clamp(24px,2.8vw,38px)] font-extrabold leading-[1.05]">
-              Programme name to confirm
+              {PROGRAMME.name}
             </h3>
             <p className="m-0 font-body text-[18px] leading-[1.55] text-mute-300">
-              The flagship intake for the first edition of the Academy. Confirm
-              the discipline focus — photography, videography, livestream
-              operations or a combined multimedia track — and the full
-              description will sit here.
+              A three-day practical training designed to help emerging creatives
+              develop practical skills, create meaningful work, build their
+              portfolios and connect with opportunities.
             </p>
             <a
               href="#apply"
               className="btn btn-solid mt-auto self-start px-7 py-[15px] text-[17px]"
             >
-              Apply for this intake
+              Apply for Cohort 1
             </a>
           </div>
           <div
@@ -92,18 +93,18 @@ export default function Programme() {
           className="autofit gap-[clamp(12px,1.6vw,20px)]"
           style={col("260px")}
         >
-          {extras.map((extra) => (
+          {outcomes.map((item) => (
             <div
-              key={extra.label}
+              key={item.label}
               data-reveal
               className="flex flex-col gap-3 border border-ink-edge bg-ink-card p-[clamp(22px,2.6vw,32px)]"
             >
-              <div className="font-mono text-[11px] tracking-[0.16em] text-mute-500">
-                {extra.label}
+              <div className="font-mono text-[11px] tracking-[0.16em] text-red-brand">
+                {item.label}
               </div>
-              <h4 className="m-0 text-[22px] font-bold">{extra.title}</h4>
-              <p className="m-0 font-body text-base leading-[1.5] text-mute-400">
-                {extra.copy}
+              <h4 className="m-0 text-[22px] font-bold">{item.title}</h4>
+              <p className="m-0 font-body text-base leading-[1.55] text-mute-400">
+                {item.copy}
               </p>
             </div>
           ))}

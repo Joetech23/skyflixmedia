@@ -13,9 +13,9 @@ import Apply from "@/components/academy/Apply";
 import ApplyDialog from "@/components/academy/ApplyDialog";
 
 export const metadata: Metadata = {
-  title: "Skyflix Media Creative Academy — Applications open",
+  title: "Photography & Visual Storytelling Bootcamp — Skyflix Media Creative Academy",
   description:
-    "Practical training in photography, videography, editing and livestream production, taught inside a working production house in Abuja.",
+    "Apply for the Photography & Visual Storytelling Bootcamp — a three-day practical programme for young creatives aged 16–30. 13–15 October 2026, Maiduguri, Borno State.",
 };
 
 export default function AcademyPage() {

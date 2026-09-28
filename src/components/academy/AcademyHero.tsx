@@ -17,7 +17,7 @@ export default function AcademyHero() {
           data-reveal
           className="inline-flex self-start skew-y-[-2deg] bg-red-brand px-[18px] py-[10px] text-[13px] font-bold tracking-[0.22em] text-white"
         >
-          FIRST EDITION · APPLICATIONS OPEN
+          COHORT 1 · 13–15 OCT 2026 · MAIDUGURI
         </div>
         <h1
           className="m-0 max-w-[18ch] text-[clamp(38px,7.4vw,98px)] font-extrabold leading-[0.93] tracking-[-0.03em]"
@@ -28,8 +28,9 @@ export default function AcademyHero() {
           data-reveal
           className="m-0 max-w-[60ch] font-body text-[clamp(17px,2.1vw,27px)] leading-[1.45] text-[#d2d2d2] [text-wrap:pretty]"
         >
-          Practical training in photography, videography, editing and livestream
-          production — taught inside a working production house in Abuja.
+          Applications are open for the Photography &amp; Visual Storytelling
+          Bootcamp — a three-day practical training for young creatives aged
+          16–30, in Maiduguri, Borno State. 30 places available.
         </p>
         <div data-reveal className="mt-[6px] flex flex-wrap gap-[14px]">
           <a href="#apply" className="btn btn-solid px-[30px] py-4 text-[17px]">
