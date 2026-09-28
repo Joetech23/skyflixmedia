@@ -20,7 +20,12 @@ application is silently lost.
    create a new Google Sheet. Name it e.g. **Skyflix Academy — Applications**.
 2. In the sheet: **Extensions → Apps Script**.
 3. Delete everything in `Code.gs` in the editor and paste the whole contents
-   of `integrations/google-sheets/Code.gs` from this repo. Click **Save**.
+   of [Code.gs](Code.gs) (in this same folder). Click **Save**.
+   - **Important:** open Apps Script *from the sheet* (Extensions → Apps
+     Script). A script created at script.google.com isn't attached to any
+     sheet. If that's how you made it, add a second script property
+     `SHEET_ID` (step 4) with the ID from the sheet's address:
+     `docs.google.com/spreadsheets/d/`**`<SHEET_ID>`**`/edit`
 4. Create the shared secret (a password only the website and the script know):
    - In Apps Script, click the **gear icon (Project Settings)**.
    - Scroll to **Script Properties → Add script property**.
@@ -89,7 +94,7 @@ Add each for **Production** (and Preview if you use it):
 
 Then **Deployments → the latest → ⋯ → Redeploy** so the new settings load.
 
-For local testing, copy `.env.example` to `.env.local` and fill in the same
+For local testing, copy [.env.example](../../.env.example) (project root) to `.env.local` and fill in the same
 values. Without any values, the form still works locally: submissions are
 printed in the terminal instead of stored.
 
@@ -97,6 +102,9 @@ printed in the terminal instead of stored.
 
 ## Part 4 — Test it end to end
 
+0. Open **https://www.skyflixmedia.com.ng/api/academy/status**. It checks
+   the sheet connection (without writing anything) and says in plain words
+   what to fix. Every line should say Working / OK / Set / Configured.
 1. Go to https://www.skyflixmedia.com.ng/academy and click **Apply now**.
 2. Submit a test application using your own email.
 3. Check:
