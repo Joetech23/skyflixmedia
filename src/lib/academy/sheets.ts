@@ -63,7 +63,9 @@ export async function checkSheet() {
   const url = env("GOOGLE_SHEETS_WEBHOOK_URL") ?? "";
   const result = await callScript({ dryRun: true });
   return {
-    urlLooksRight: /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(url),
+    // Personal accounts: /macros/s/<id>/exec. Workspace: /a/macros/<domain>/s/<id>/exec.
+    urlLooksRight:
+      /^https:\/\/script\.google\.com\/(a\/macros\/[^/]+|macros)\/s\/[\w-]+\/exec$/.test(url),
     ...result,
   };
 }
